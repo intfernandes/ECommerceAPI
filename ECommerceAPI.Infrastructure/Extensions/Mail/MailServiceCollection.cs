@@ -11,10 +11,10 @@ namespace ECommerceAPI.Infrastructure.Extensions.Mail
     {
         public static IServiceCollection AddMailService(this IServiceCollection services, IConfiguration configuration)
         {
-            services.Configure<MailConfiguration>(configuration.GetSection("MailConfiguration"));
-            services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<MailConfiguration>>().Value);
+            services.Configure<EmailFrom>(configuration.GetSection("EmailConfiguration"));
+            services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<EmailFrom>>().Value);
 
-            services.AddScoped(typeof(IMailService), typeof(MailService));
+            services.AddScoped(typeof(IEmailService), typeof(EmailService));
             return services;
         }
     }

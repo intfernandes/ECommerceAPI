@@ -36,7 +36,13 @@ namespace ECommerceAPI.Infrastructure.Services.Authentication
 
         #region Constructors
 
-        public AuthenticationService(UserManager<ApplicationUser> userManager, ITokenService tokenService, IMapper mapper, IUnitOfWork unitOfWork, IMailService mailService, IHttpContextAccessor httpContextAccessor)
+        public AuthenticationService(
+        UserManager<ApplicationUser> userManager,
+        ITokenService tokenService,
+        IMapper mapper,
+        IUnitOfWork unitOfWork,
+        IMailService mailService,
+        IHttpContextAccessor httpContextAccessor)
         {
             _userManager = userManager;
             _tokenService = tokenService;
