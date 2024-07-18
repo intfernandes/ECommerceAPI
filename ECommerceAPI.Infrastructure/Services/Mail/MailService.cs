@@ -33,11 +33,11 @@ namespace ECommerceAPI.Infrastructure.Services.Mail
                 var mailMessage = new MimeMessage();
 
                 // Mail From
-                var mailFrom = new MailboxAddress(_mailConfiguration.Name, _mailConfiguration.EmailId);
+                var mailFrom = new MailboxAddress(_mailConfiguration.Name, _mailConfiguration.Address);
                 mailMessage.From.Add(mailFrom);
 
                 // Mail To
-                var mailTo = new MailboxAddress(mailData.MailToName, mailData.MailToId);
+                var mailTo = new MailboxAddress(mailData.MailToName, mailData.MailToAddress);
                 mailMessage.To.Add(mailTo);
 
                 // Mail Subject

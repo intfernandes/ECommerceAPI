@@ -11,7 +11,7 @@ namespace ECommerceAPI.Presentation.Controllers.Errors
         public IActionResult Error(int code)
         {
             var responseHandler = new ResponseHandler();
-
+            
             return code switch
             {
                 StatusCodes.Status401Unauthorized => Unauthorized(responseHandler.Unauthorized<object>("Unauthorized or Invalid token.")),

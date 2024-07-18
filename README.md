@@ -46,6 +46,7 @@ The e-commerce API streamlines user interactions and management, encompassing au
 7. Access DB: localhost:1433
 
 8. Don't forget .env file with variables
+ 
 
 | Variable                               | Value                                                                                                        |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -62,3 +63,9 @@ these variables are for the lab environment only... don't use these in xxx produ
 
 1. [Postman]()
 2. [Apidog]()
+
+{
+  "email": "int2.fernandes@gmail.com",
+  "password": "Se@122506",
+  "confirmPassword": "Se@122506"
+}

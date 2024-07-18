@@ -5,7 +5,7 @@
         #region Properties
 
         public string MailToName { get; set; }
-        public string MailToId { get; set; }
+        public string MailToAddress { get; set; }
         public string MailSubject { get; set; }
         public string MailBody { get; set; }
 
@@ -13,10 +13,10 @@
 
         #region Constructors
 
-        public MailData(string mailToName, string mailToId, string mailSubject, string mailBody)
+        public MailData(string mailToName, string mailToAddress, string mailSubject, string mailBody)
         {
             MailToName = mailToName;
-            MailToId = mailToId;
+            MailToAddress = mailToAddress;
             MailSubject = mailSubject;
             MailBody = mailBody;
         }
